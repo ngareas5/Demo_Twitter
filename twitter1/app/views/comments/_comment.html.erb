@@ -1,0 +1,7 @@
+<p>
+    <%#binding.pry%>
+  <%= comment.comment %>
+</p>
+ <%= link_to 'delete Comment', [comment.tweet, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>	

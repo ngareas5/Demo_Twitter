@@ -1,0 +1,17 @@
+<%= form_for( [@tweet, @tweet.comments.build], local: true) do |form| %>
+  
+  <p>
+    <%= form.label :comment %><br>
+    <%= form.text_area :comment %>
+  </p>
+      
+  <p>
+    <%#= form.hidden_field :user_id , value: current_user.id %>
+     
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+
