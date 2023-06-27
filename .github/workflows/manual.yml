@@ -19,6 +19,7 @@ on:
         type: string
       environment:
         description: 'Deployment Environment'
+        type: choice
         required: true
         default: 'production'
         options:
