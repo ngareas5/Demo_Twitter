@@ -36,10 +36,6 @@ jobs:
   
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ inputs.name }}"'
-
-    - name: Deploy to {{ github.event.inputs.environment }}
-      run: echo "Hello ${{ github.event.inputs.environment }}"'
+      - name: Deploy to {{ github.event.inputs.environment }}
+        run: echo "Hello ${{ github.event.inputs.environment }}"'
         
